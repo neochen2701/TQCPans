@@ -33,5 +33,5 @@ for single_tr in bsObj.find("table", {"class": "DataTable2"}).findAll("tr"):
     F1 = cell[1].text
     data = [[F0, F1]]
     w.writerows(data)
-    count = count = 1
+    count = count + 1
 f.close()
