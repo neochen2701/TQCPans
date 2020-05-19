@@ -1,8 +1,8 @@
 # 載入 rvest 套件
 library(rvest)
 
-date_css_selector <- "tr:nth-child(1) td:nth-child(1)"
-currency_css_selector <- "tr:nth-child(1) td:nth-child(2)"
+date_css_selector <- "tr:nth-child(n) td:nth-child(1)"
+currency_css_selector <- "tr:nth-child(n) td:nth-child(2)"
 
 # 讀入 html 檔案
 html_doc <- read_html("read.html")
