@@ -30,7 +30,7 @@ public class JPA05 {
 
 			if (input > 10 || input < 1) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			int boytotal = 0;
@@ -52,7 +52,7 @@ public class JPA05 {
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

@@ -43,7 +43,7 @@ public class JPA01 {
 			smallest = 0;
 		}
 
-                System.out.println("smallest:" + smallest);
+        System.out.println("smallest:" + smallest);
 		System.out.print("largest:" + biggest);
 	}
 

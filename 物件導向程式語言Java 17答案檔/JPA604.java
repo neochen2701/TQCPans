@@ -72,7 +72,7 @@ public class JPA06 {
 			String[] payarr = pay.split(" ");
 			if (payarr.length > 2) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			sc.close();
 
@@ -97,7 +97,7 @@ public class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

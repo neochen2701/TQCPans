@@ -20,10 +20,17 @@ public class JPA03 {
 		compute(numbers);
 	}
 
-	public static void compute(int[] numbers) {
-		Arrays.sort(numbers);
-		for (int sort : numbers) {
-			System.out.print(sort + " ");
-		}
-	}
+public static void compute(int[] numbers) {
+  Arrays.sort(numbers);
+  for (int i = 0 ; i < numbers.length; i++){
+   if(i == 4){
+      System.out.print(numbers[i]);
+   }else{
+      System.out.print(numbers[i] + " ");
+   }
+    
+   
+  }
+
+ }
 }

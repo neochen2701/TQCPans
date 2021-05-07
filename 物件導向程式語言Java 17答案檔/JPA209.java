@@ -31,7 +31,7 @@ public class JPA02 {
 				System.out.print("(" + s1 + "," + s2 + ")" + " 4");
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

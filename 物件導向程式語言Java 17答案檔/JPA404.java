@@ -20,7 +20,7 @@ public class JPA04 {
 			strDate = sdf.format(date);
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 
 		Calendar cal = Calendar.getInstance();

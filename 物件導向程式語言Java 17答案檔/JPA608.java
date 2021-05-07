@@ -54,7 +54,7 @@ public class JPA06 {
 
 			if (unitcost < 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			int totalcost = 0;
@@ -66,7 +66,7 @@ public class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

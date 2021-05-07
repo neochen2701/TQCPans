@@ -24,7 +24,7 @@ public class JPA05 {
 				int chk = Integer.parseInt(data[i]);
 				if (chk < 0 || chk > 100) {
 					System.out.print("error");
-					System.exit(0);
+					return;
 				}
 			}
 
@@ -49,7 +49,7 @@ public class JPA05 {
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

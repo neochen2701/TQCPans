@@ -15,7 +15,7 @@ public class JPA03 {
 		String[] data = input.split(" ");
 		if (data.length < 6) {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 
 		int i = 0;
@@ -26,7 +26,7 @@ public class JPA03 {
 					i++;
 				} catch (Exception e) {
 					System.out.print("error");
-					System.exit(1);
+					return;
 				}
 		}
 

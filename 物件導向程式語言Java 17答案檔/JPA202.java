@@ -11,13 +11,13 @@ public class JPA02 {
 			sc.close();
 		} catch (Exception e) {
 			System.out.println("error");
-			System.exit(1);
+			return;
 		}
 
 		if ((input % 2) == 0)
-                        System.out.print(input + " is an even number.");
+             System.out.print(input + " is an even number.");
 		else
-                        System.out.print(input + " is an odd number.");
+             System.out.print(input + " is an odd number.");
 	}
 
 

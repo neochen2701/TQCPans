@@ -12,14 +12,14 @@ public class JPA03 {
 			ans = sc.nextInt();
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 		sc.close();
 
 		ans = Math.abs(ans);
 		if (ans <= 0) {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 		System.out.print(compute(ans));
 	}

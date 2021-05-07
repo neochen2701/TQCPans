@@ -1,12 +1,7 @@
 import java.util.Scanner;
 
 class Part {
-	int cost;
-
-	Part() {
-		cost = 0;
-	}
-
+	int cost = 0;
 	public int getcost() {
 		return cost;
 	}
@@ -101,7 +96,7 @@ public class JPA06 {
 			}
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 
 		Notebook Notebook;
@@ -117,7 +112,7 @@ public class JPA06 {
 			System.out.print("NB:" + number + ",Cost:" + Math.round(cost) + ",Total:" + Math.round(price));
 		} else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 	}
 }

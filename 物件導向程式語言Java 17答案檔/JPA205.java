@@ -11,7 +11,7 @@ public class JPA02 {
 			num2 = sc.nextInt();
 			if (num1 > 100 || num2 > 100 || num1 < 0 || num2 < 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			sc.close();
 
@@ -25,7 +25,7 @@ public class JPA02 {
 			System.out.print(num2);
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

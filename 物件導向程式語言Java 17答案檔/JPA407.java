@@ -16,7 +16,7 @@ public class JPA04 {
 			sc.close();
 			if (year > 2018 || year < 2000) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 		} catch (Exception ex) {

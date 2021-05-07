@@ -27,7 +27,7 @@ public class JPA05 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

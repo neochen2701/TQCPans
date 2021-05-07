@@ -12,11 +12,11 @@ public class JPA02 {
 			sc.close();
 			if (num1 > 100 || num2 > 100 || num1 <= 0 || num2 <= 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 		int i;
 		int j;

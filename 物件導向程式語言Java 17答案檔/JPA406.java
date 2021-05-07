@@ -11,12 +11,12 @@ public class JPA04 {
 			sc.close();
 			if (number < 1 || number > 100) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 		Random rand = new Random();
 		rand.setSeed(number);

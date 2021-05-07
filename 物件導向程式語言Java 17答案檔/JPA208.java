@@ -11,7 +11,7 @@ public class JPA02 {
 
 			if (num > 9 || num < 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			for (int i = 1; i <= num; i++) {
@@ -22,7 +22,7 @@ public class JPA02 {
 			}
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

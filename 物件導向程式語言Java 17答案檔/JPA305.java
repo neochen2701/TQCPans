@@ -20,11 +20,11 @@ public class JPA03 {
 				System.out.print((input + 1) + ":" + n[input]);
 			else {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

@@ -64,7 +64,7 @@ class JPA06 {
 			double rate = Double.parseDouble(input);
 			if (rate > 5 || (rate < 0)) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			Account acc = new Account("jack", rate);
 
@@ -86,7 +86,7 @@ class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

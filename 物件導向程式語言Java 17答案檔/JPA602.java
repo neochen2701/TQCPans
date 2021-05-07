@@ -25,7 +25,7 @@ class Car {
 			break;
 		default:
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 	}
 
@@ -51,7 +51,7 @@ public class JPA06 {
 			System.out.println(new Car(cc, seat, color, door).show());
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

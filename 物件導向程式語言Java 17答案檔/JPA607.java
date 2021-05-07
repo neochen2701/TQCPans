@@ -27,7 +27,7 @@ class Account {
 			rate = 5;
 		else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 	}
 
@@ -89,7 +89,7 @@ class JPA06 {
 				}
 			} else {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			Account accj = new Account("jack", inputyear);
@@ -137,7 +137,7 @@ class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

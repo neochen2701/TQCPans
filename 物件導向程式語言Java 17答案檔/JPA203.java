@@ -14,6 +14,8 @@ public class JPA02 {
 			} catch (Exception e) {
 				input = 0;
 				sc.next();
+				
+		
 			}
 			data[i] = input;
 		}

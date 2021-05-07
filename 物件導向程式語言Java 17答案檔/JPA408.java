@@ -16,7 +16,7 @@ public class JPA04 {
 			int min = Integer.parseInt(data[1]);
 			if (min > 60) {
 				System.out.println("error");
-				System.exit(0);
+				return;
 			}
 
 			System.out.print(day + "d:" + hour + "h:" + min + "m");

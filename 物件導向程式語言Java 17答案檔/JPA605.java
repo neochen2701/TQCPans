@@ -32,7 +32,7 @@ class Manager extends Staff implements Ilogin, Ilogout {
 			super.worktime = wt;
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 
@@ -47,7 +47,7 @@ class Manager extends Staff implements Ilogin, Ilogout {
 			System.out.print(n + " Login " + loginformat.format(super.logintime));
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 
@@ -63,7 +63,7 @@ class Manager extends Staff implements Ilogin, Ilogout {
 			System.out.println(",Logout " + dtformat.format(super.logouttime));
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }
@@ -91,7 +91,7 @@ public class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

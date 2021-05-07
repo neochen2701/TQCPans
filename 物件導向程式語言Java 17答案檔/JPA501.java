@@ -26,7 +26,7 @@ public class JPA05 {
 
 			if (num < 1 || num > 10) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			} else {
 				System.out.print(num + ":" + data[num - 1]);
 			}
@@ -34,7 +34,7 @@ public class JPA05 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

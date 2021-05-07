@@ -44,7 +44,7 @@ public class JPA06 {
 			sc.close();
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 
 		String data[] = input.split(" ");
@@ -55,7 +55,7 @@ public class JPA06 {
 
 		if (pay < 0 || hour < 0) {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 
 		if (type.equals("p")) {
@@ -64,7 +64,7 @@ public class JPA06 {
 			System.out.print("FullTime " + name + " " + (int) new FullTime(name, pay, hour).salary());
 		} else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 	}
 }

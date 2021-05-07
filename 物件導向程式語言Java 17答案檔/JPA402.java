@@ -23,7 +23,7 @@ public class JPA04 {
 			String inputdata2 = sc.next();
 			if (isdate(inputdata2) == false) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			sc.close();
 
@@ -35,7 +35,7 @@ public class JPA04 {
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 

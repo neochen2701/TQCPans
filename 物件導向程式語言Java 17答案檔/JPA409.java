@@ -14,7 +14,7 @@ public class JPA04 {
 			sc.close();
 			if (data1.compareTo(data2) > 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			DateTimeFormatter DTF = DateTimeFormatter.ofPattern("yyyyMMdd");

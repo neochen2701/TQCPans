@@ -30,7 +30,7 @@ public class JPA05 {
 
 			if (judge < 1 || judge > 13) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			data = delete(data, judge - 1);
 
@@ -46,7 +46,7 @@ public class JPA05 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 
 	}

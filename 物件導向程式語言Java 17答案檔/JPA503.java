@@ -23,7 +23,7 @@ public class JPA05 {
 
 			if (input.equals("") || num < 1 || num > 6) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			File f = new File("write.txt");
@@ -40,7 +40,7 @@ public class JPA05 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

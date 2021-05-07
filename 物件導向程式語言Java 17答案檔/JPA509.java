@@ -33,7 +33,7 @@ public class JPA05 {
 				input = num;
 			if (input < 5) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			File w = new File("write.txt");
@@ -51,7 +51,7 @@ public class JPA05 {
 			fw.close();
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

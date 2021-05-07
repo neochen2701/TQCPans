@@ -25,11 +25,19 @@ public class JPA03 {
 		System.out.print("before:");
 		int len = arr.length;
 		for (int a = 0; a < len; a++)
-			System.out.print(arr[a] + " ");
+			if(a == len-1){
+      			System.out.print(arr[a]);
+   			}else{
+      			System.out.print(arr[a] + " ");
+   			}
 		arr = compute(arr);
 		System.out.print("\nafter:");
 		for (int a = 0; a < len; a++)
-			System.out.print(arr[a] + " ");
+			if(a == len-1){
+      			System.out.print(arr[a]);
+   			}else{
+      			System.out.print(arr[a] + " ");
+   			}
 	}
 
 	public static String[] compute(String[] s) {

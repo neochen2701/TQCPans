@@ -22,7 +22,7 @@ public class JPA04 {
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

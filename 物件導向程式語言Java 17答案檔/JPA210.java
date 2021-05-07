@@ -12,7 +12,7 @@ public class JPA02 {
 
 			if (num2 > 25) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			int ans = num1 / num2;
@@ -20,11 +20,11 @@ public class JPA02 {
 
 		} catch (ArithmeticException e) {
 			System.out.print("error:DivideByZeroException");
-			System.exit(1);
+			return;
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

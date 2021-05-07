@@ -18,7 +18,7 @@ public class JPA03 {
 			System.out.print(total);
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

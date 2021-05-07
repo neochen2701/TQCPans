@@ -13,11 +13,11 @@ public class JPA03 {
 				System.out.print(compute(i));
 			else {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 

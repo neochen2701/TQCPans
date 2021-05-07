@@ -71,7 +71,7 @@ class JPA06 {
 
 			if (inputhour < 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			ArrayList<Integer> mgers = new ArrayList<Integer>();
@@ -98,7 +98,7 @@ class JPA06 {
 
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

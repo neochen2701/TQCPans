@@ -20,10 +20,10 @@ public class JPA01 {
 				first -= 31;
 			} else {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 			System.out.print((char) first);
-			System.exit(0);
+			return;
 		}
 
 		int last = input.charAt(input.length() - 1);
@@ -39,7 +39,7 @@ public class JPA01 {
 			first -= 31;
 		} else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 
 		if (last == 57) {
@@ -52,7 +52,7 @@ public class JPA01 {
 			last -= 31;
 		} else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 
 		System.out.print((char) first + other + (char) last);

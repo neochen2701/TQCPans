@@ -20,7 +20,7 @@ public class JPA04 {
 
 			if (com > 12 || com < 1) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			int sum = 0;

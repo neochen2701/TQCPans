@@ -26,7 +26,7 @@ public class JPA05 {
 			int intnum = Integer.parseInt(num);
 			if (intnum <= 0) {
 				System.out.print("error");
-				System.exit(0);
+				return;
 			}
 
 			bw.write(title + "\r\n");
@@ -46,7 +46,7 @@ public class JPA05 {
 
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }

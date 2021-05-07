@@ -24,7 +24,7 @@ public class JPA01 {
 
 		} else {
 			System.out.print(0);
-			System.exit(0);
+			return;
 		}
 	}
 }

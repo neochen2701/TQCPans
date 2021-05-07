@@ -1,26 +1,21 @@
 import java.util.Scanner;
 
 class UnitCost {
-	int cost;
-
-	UnitCost() {
-		cost = 0;
-	}
-
+	int cost = 0;
 	public int getCost() {
 		return cost;
 	}
 }
 
 class Engine extends UnitCost {
-	Engine(int cc, int year) {
+	public Engine(int cc, int year) {
 		if (cc == 1800)
 			cost = 20000;
 		else if (cc == 2000)
 			cost = 25000;
 		else {
 			System.out.print("error");
-			System.exit(0);
+			return;
 		}
 
 		if (year >= 2 && year < 5)
@@ -46,7 +41,7 @@ public class JPA06 {
 			System.out.print(new Engine(cc, year).getCost());
 		} catch (Exception ex) {
 			System.out.print("error");
-			System.exit(1);
+			return;
 		}
 	}
 }
