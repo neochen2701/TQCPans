@@ -5,17 +5,16 @@ public class JPA02 {
 	public static void main(String[] args) {
 
 		int[] data = new int[3];
-
+                Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < 3; i++) {
 			int input;
-			Scanner sc = new Scanner(System.in);
+			
 			try {
 				input = sc.nextInt();
 			} catch (Exception e) {
 				input = 0;
-				sc.next();
-				
-		
+				if(sc.hasNext())
+				   sc.next();
 			}
 			data[i] = input;
 		}
