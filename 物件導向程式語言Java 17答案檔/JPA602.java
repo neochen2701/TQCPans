@@ -48,7 +48,7 @@ public class JPA06 {
 			int seat = Integer.parseInt(data[1]);
 			int color = Integer.parseInt(data[2]);
 			int door = Integer.parseInt(data[3]);
-			System.out.println(new Car(cc, seat, color, door).show());
+			System.out.print(new Car(cc, seat, color, door).show());
 		} catch (Exception ex) {
 			System.out.print("error");
 			return;

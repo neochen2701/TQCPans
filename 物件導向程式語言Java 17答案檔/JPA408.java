@@ -15,7 +15,7 @@ public class JPA04 {
 			int hour = Integer.parseInt(data[0]) % 8;
 			int min = Integer.parseInt(data[1]);
 			if (min > 60) {
-				System.out.println("error");
+				System.out.print("error");
 				return;
 			}
 

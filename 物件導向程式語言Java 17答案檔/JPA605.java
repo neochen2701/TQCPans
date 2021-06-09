@@ -60,7 +60,7 @@ class Manager extends Staff implements Ilogin, Ilogout {
 			calendar.setTime(logouttime);
 			calendar.add(Calendar.SECOND, 2);
 			logouttime = calendar.getTime();
-			System.out.println(",Logout " + dtformat.format(super.logouttime));
+			System.out.print(",Logout " + dtformat.format(super.logouttime));
 		} catch (Exception e) {
 			System.out.print("error");
 			return;
