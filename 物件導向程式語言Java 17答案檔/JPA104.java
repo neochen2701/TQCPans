@@ -15,7 +15,7 @@ public class JPA01 {
 			System.out.printf("%.4f", (Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2))));
 		} catch (Exception e) {
 			System.out.print("error");
-			System.exit(1);
+			System.exit(0);
 		}
 	}
 }

@@ -32,6 +32,7 @@ public class JPA04 {
 			System.out.print(sum);
 		} catch (Exception ex) {
 			System.out.print("error");
+			return;
 		}
 	}
 }

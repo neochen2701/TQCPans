@@ -66,7 +66,7 @@ public class JPA05 {
 					break;
 				default:
 					System.out.print("error");
-					return;
+					System.exit(0);
 				}
 			}
 

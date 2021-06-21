@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
 class Part {
-	int cost = 0;
+	int cost;
+
+	Part() {
+		cost = 0;
+	}
+
 	public int getcost() {
 		return cost;
 	}
