@@ -1,31 +1,34 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 public class JPA04 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int number = 0;
-		try {
-			number = sc.nextInt();
-			sc.close();
-			if (number < 1 || number > 100) {
-				System.out.print("error");
-				return;
-			}
+    public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+        int n;
+        try {
+            n = scanner.nextInt();
+            scanner.close();
 
-		} catch (Exception ex) {
-			System.out.print("error");
-			return;
-		}
-		Random rand = new Random();
-		rand.setSeed(number);
-		int[] num = new int[10];
-		for (int i = 0; i < 10; i++) {
-			num[i] = rand.nextInt(100) + 1;
-		}
-		for (int show : num) {
-			System.out.print(show + " ");
-		}
-	}
+            if (n >= 1 && n <= 100){
+                Random random = new Random(n);
+                ArrayList<Integer> list = new ArrayList<Integer>();
+                
+                while (list.size() < 10){
+                    int r = random.nextInt(100) + 1;
+                    if (list.contains(r)) continue;
+                    list.add(r);
+                }
+
+                for (int item: list) {
+                    System.out.print(item + " ");
+                }
+            } else {
+                System.out.println("error");
+            }
+        } catch (Exception ex){
+            System.out.println("error");
+        }
+    }
 }
