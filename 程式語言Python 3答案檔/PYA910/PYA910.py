@@ -9,5 +9,5 @@ with open(f_name, 'r', encoding='UTF-8') as file:
             c_male += 1
         elif row1[2] == '0':
             c_female += 1
-print("number of males:", c_male)
+print("Number of males:", c_male)
 print("Number of females:", c_female)
