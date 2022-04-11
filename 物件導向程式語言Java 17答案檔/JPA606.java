@@ -25,11 +25,11 @@ class Account {
 		balance -= i;
 	}
 
-	double balance() {
+	double getBalance() {
 		return balance;
 	}
 
-	double addInterest(double rate) {
+	double getFutureValue(double rate) {
 		balance *= (rate / 100 + 1);
 		return balance;
 	}
@@ -75,7 +75,7 @@ class JPA06 {
 					acc.withdraw(number[i]);
 			}
 
-			double result = acc.addInterest(rate);
+			double result = acc.getFutureValue(rate);
 
 			if (result > (int) result)
 				System.out.print(result);
