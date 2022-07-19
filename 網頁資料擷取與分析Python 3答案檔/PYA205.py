@@ -3,7 +3,7 @@ import requests
 import json
 
 # 開放資料Json格式連結
-url = 'http://tqc.codejudger.com:3000/target/5205.json'
+url = 'https://www.codejudger.com/target/5205.json'
 # 發出Get請求
 response = requests.get(url)
 # 回傳內容長度

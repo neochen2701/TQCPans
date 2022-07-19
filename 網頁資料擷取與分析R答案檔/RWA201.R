@@ -15,7 +15,7 @@ get_word_cnt <- function(word_pattern) {
 }
 
 # 宣告網頁網址
-page_url <- "http://tqc.codejudger.com:3000/target/5201.html"
+page_url <- "https://www.codejudger.com/target/5201.html"
 
 # 使用 readLines 函數讀取網頁
 html_doc <- readLines(page_url)

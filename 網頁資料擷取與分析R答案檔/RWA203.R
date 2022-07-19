@@ -4,7 +4,7 @@ library(rvest)
 lottery_numbers_selector <- ".dotted01+ .contents_box02 .ball_yellow"
 special_numbers_selector <- ".ball_yellow+ .ball_red"
 # 宣告網頁網址
-page_url <- "http://tqc.codejudger.com:3000/target/5203.html"
+page_url <- "https://www.codejudger.com/target/5203.html"
 # 使用 read_html 函數讀取網頁
 html_doc <- read_html(page_url)
 print("大樂透開獎 : ")

@@ -3,7 +3,7 @@
 import bs4
 import requests
 
-url = 'http://tqc.codejudger.com:3000/target/5203.html'
+url = 'https://www.codejudger.com/target/5203.html'
 # GET 請求
 html = requests.get(url)
 

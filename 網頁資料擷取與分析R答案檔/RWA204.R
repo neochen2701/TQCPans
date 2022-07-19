@@ -2,7 +2,7 @@
 library(jsonlite)
 
 # 宣告資料連結
-json_url <- "http://tqc.codejudger.com:3000/target/5204.json"
+json_url <- "https://www.codejudger.com/target/5204.json"
 # 以 fromJSON 函數讀入資料連結
 df <- fromJSON(json_url)
 is_college <- df$type == "大專院校"

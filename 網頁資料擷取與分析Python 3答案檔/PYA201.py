@@ -2,7 +2,7 @@
 import requests
 import re
 
-url = 'http://tqc.codejudger.com:3000/target/5201.html'
+url = 'https://www.codejudger.com/target/5201.html'
 
 # 使用 GET 請求
 htmlfile = requests.get(url)

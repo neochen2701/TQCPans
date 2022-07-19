@@ -4,7 +4,7 @@ import requests
 import json
 
 # 開放資料連結
-url = 'http://tqc.codejudger.com:3000/target/5204.json'
+url = 'https://www.codejudger.com/target/5204.json'
 # 發出HTTP GET請求
 res = requests.get(url)
 
