@@ -1,23 +1,14 @@
-import java.util.Scanner;
+import java.util.Scanner;  // Import the Scanner class
 
 public class JPA01 {
-
-	public static void main(String[] args) {
-
-		double input = 0;
-		try {
-			Scanner sc = new Scanner(System.in);
-			input = sc.nextDouble();
-			sc.close();
-		} catch (Exception e) {
-
-		}
-		calCircle(input);
-	}
-
-	public static void calCircle(double input) {
-		final double pi = Math.PI;
-		double result = input * input * pi;
-		System.out.printf("%.4f", result);
-	}
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    try{
+      double num = sc.nextDouble();
+      System.out.printf("%.4f\n", Math.PI * num * num);
+    }catch(Exception e){
+      System.out.println("0.0000");
+    }
+    return;
+  }
 }

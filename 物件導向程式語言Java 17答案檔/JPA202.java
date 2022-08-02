@@ -1,24 +1,26 @@
 import java.util.Scanner;
 
 public class JPA02 {
-
+    public static boolean isodd(int x){
+        if(x%2 == 0)
+            return false;
+        else
+            return true;
+    }
 	public static void main(String[] args) {
-
-		int input = 0;
+        int x;
 		try {
 			Scanner sc = new Scanner(System.in);
-			input = sc.nextInt();
-			sc.close();
+			String s = sc.nextLine();
+            x = Integer.parseInt(s);
 		} catch (Exception e) {
 			System.out.println("error");
-			return;
+            return;
 		}
-
-		if ((input % 2) == 0)
-             System.out.print(input + " is an even number.");
-		else
-             System.out.print(input + " is an odd number.");
+        if(isodd(x))
+            System.out.print(x + " is an odd number.");
+        else
+            System.out.print(x + " is an even number.");
+        return;
 	}
-
-
 }
