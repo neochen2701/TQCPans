@@ -7,8 +7,8 @@ int main ()
  	char str1[128];
  	char str2[128];
 	int n, result;
-	gets(str1);
-	gets(str2);
+    scanf("%[^\n]%*c", str1);
+    scanf("%[^\n]%*c", str2);
 	scanf("%d", &n);
 	
 	if(n <= strlen(str1)){
