@@ -2,35 +2,37 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class JPA03 {
+    public static int solve(String s){
+        try{
+            int x = Integer.parseInt(s);
+            return x;
+        }catch (NumberFormatException ex){
+            return 0;
+        }
+    }
 
 	public static void main(String[] args) {
-
-		int[] numbers = new int[5];
+		int[] num = new int[5];
 		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i < 5; i++) {
-			try {
-				numbers[i] = sc.nextInt();
-			} catch (Exception e) {
-				numbers[i] = 0;
-				sc.next();
-			}
-		}
-		sc.close();
-
-		compute(numbers);
+		for(int i = 0; i < 5; i++){
+            String input = sc.nextLine();
+            num[i] = solve(input);
+        }
+        compute(num);
 	}
 
-public static void compute(int[] numbers) {
-  Arrays.sort(numbers);
-  for (int i = 0 ; i < numbers.length; i++){
-   if(i == 4){
-      System.out.print(numbers[i]);
-   }else{
-      System.out.print(numbers[i] + " ");
-   }
-    
-   
-  }
-
- }
+	public static void compute(int[] num) {
+        for(int i = 0; i < 5; i++){
+            for(int j = i+1; j < 5; j++){
+                if(num[i] > num[j]){
+                    int tmp = num[i];
+                    num[i] = num[j];
+                    num[j] = tmp;
+                }
+            }
+        }
+        for(int i = 0; i < 5; i++){
+            System.out.print(num[i] + " ");
+        }
+	}
 }
