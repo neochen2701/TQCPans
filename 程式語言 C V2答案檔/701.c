@@ -26,7 +26,7 @@ int main ()
 double compute(struct triangle *ptri)
 {
     double s,area;
-    s = ( ptri->side1 + ptri->side2 + ptri->side3) / 2;
+    s = ( ptri->side1 + ptri->side2 + ptri->side3) / 2.0;
     area = sqrt( s * (s-ptri->side1) * (s-ptri->side2) * (s-ptri->side3));
     return area;
 }
