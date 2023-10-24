@@ -1,15 +1,12 @@
 from decimal import Decimal, ROUND_HALF_UP
 
-num = []
-add = 0
-formula = ''
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
 
-for i in range(3):
-    n = input()
-    num.append(n)
-    add += int(n)
-
-formula = str(num[0] + '+' + num[1] + '+' + num[2] + '=' +  str(add))
+add = num1 + num2 + num3
+formula = f'{num1}+{num2}+{num3}={add}'
 print(formula)
-mean = Decimal(str(add / 3)).quantize(Decimal('0.00'), rounding = ROUND_HALF_UP)
+
+mean = Decimal(str(add / 3)).quantize(Decimal('0.00'), rounding=ROUND_HALF_UP)
 print("%.2f" % mean)

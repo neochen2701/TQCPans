@@ -1,15 +1,11 @@
-input_list = []
-for i in range(6):
-    input_list.append(input())
+input_1 = int(input())
+input_2 = int(input())
+input_3 = int(input())
+input_4 = int(input())
+input_5 = int(input())
+input_6 = int(input())
 
-for i in range(6):
-    if i == 2 or i == 5:
-        print('%10s' % str(input_list[i]))
-    else:
-        print('%10s' % str(input_list[i]), end = ' ')
-
-for i in range(6):
-    if i == 2 or i == 5:
-        print('{0: <10}'.format(input_list[i]))
-    else:
-        print('{0: <10}'.format(input_list[i]), end = ' ')
+print("%10d" % input_1, "%10d" % input_2, "%10d" % input_3)
+print("%10d" % input_4, "%10d" % input_5, "%10d" % input_6)
+print("%-10d" % input_1, "%-10d" % input_2, "%-10d" % input_3)
+print("%-10d" % input_4, "%-10d" % input_5, "%-10d" % input_6)
