@@ -33,7 +33,7 @@ public class JPA04 {
 		//System.out.println(rd.getDayOfWeek().getValue());
 		// if not work day, change to next Monday
 		if(rd.getDayOfWeek().getValue() > 5){
-			rd.plusDays(8 - rd.getDayOfWeek().getValue());
+			rd = rd.plusDays(8 - rd.getDayOfWeek().getValue());
 		}
 
 		String output = rd.format(f);
