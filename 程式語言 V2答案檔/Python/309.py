@@ -1,4 +1,3 @@
-# 題意不清，不確定輸出是否要四捨五入到小數點後第三位
 from decimal import Decimal, ROUND_HALF_UP
 
 def compute(float_list):
