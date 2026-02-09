@@ -22,7 +22,7 @@ print(df)
 print()  # 使用print分隔
 
 # 以西瓜價遞減排序後，輸出各市場的西瓜價
-df1 = df.sort_values(by="西瓜價", ascending=False)
+df1 = df.sort_values(by="西瓜價", ascending=False, kind='stable')
 print('以西瓜價遞減排序')
 print(df1['西瓜價'])
 print()  # 使用print分隔
