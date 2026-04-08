@@ -1,0 +1,11 @@
+input_1 = int(input())
+input_2 = int(input())
+input_3 = int(input())
+input_4 = int(input())
+input_5 = int(input())
+input_6 = int(input())
+
+print("%10d" % input_1, "%10d" % input_2, "%10d" % input_3)
+print("%10d" % input_4, "%10d" % input_5, "%10d" % input_6)
+print("%-10d" % input_1, "%-10d" % input_2, "%-10d" % input_3)
+print("%-10d" % input_4, "%-10d" % input_5, "%-10d" % input_6)
